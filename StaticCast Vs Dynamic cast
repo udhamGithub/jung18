@@ -1,0 +1,121 @@
+#if 0
+-----------------------------------------------------------------------------------------------------------
+//casting tell us conversion is safe or not
+//Well explained where only staic cast help not dynamic cast.But user need to care for static_casting
+//It covers when dynamic cast save from wrong out put by giving run time error, which static cast does  not
+  //which leave to user.
+//If base class pointer  want to acess derived class object function,It wont
+==========================================================================================================
+#endif
+#include<iostream>
+using namespace std;
+class base
+{
+	int basevalue;
+public:
+	base():basevalue(50)
+	{}
+	virtual void show()
+	{	cout<<"Base value";}
+};
+//----------------------------------------------------
+class derived1: public base
+{
+	int derived1Value;
+public:
+	derived1():derived1Value(10)
+    {}
+	void show()
+	{
+		cout<<"derived1Value:"<<derived1Value<<endl;
+	}
+};
+//---------------------------------------------------------
+class derived2: public base
+{
+	int derived2Value;
+public:
+	derived2():derived2Value(5)
+    {}
+	void show()
+	{
+		cout<<"derived2Value:"<<derived2Value;
+	}
+};
+//-------------------------------------------------------------------
+int main()
+{
+  //First Go through  note below written sequence
+  
+	base *bptr= new derived1;
+	//derived2 *dptr= static_cast<derived2 * >(bptr);
+	derived2 *dptr= dynamic_cast<derived2 * >(bptr);
+	if(dptr!=NULL)
+	{
+		dptr->show();
+		cout<<" we are expecting derived2Value: as 5:but derived2 object data is not "
+				"present so it should  give conversion faild error in case of static_cast"<<endl;
+	}
+	else
+	{
+		cout<<"conversion failed";
+	}
+	return 0;
+}
+#if 0
+===================================================================================================
+//*1.base *bptr= new derived1;[**Pre condition -Basclasss does not contain any virtual key word,change in index 6 ]
+   -Drived class object contain the base class data as it is derived *So in this case conversion
+    does not failed
+   -but base pointer will not able to acess the derived class function ,it will acess own function
+    only .
+
+	base *bptr= new derived1;
+    bptr->show();
+//*2.If  base pointer still want to acess derived class function he can do below
+     but compiler fails as,base class does not contain derived class object   or data member
+	 and warn  devloper this is wrong conversion,and if he want he has to type cast on own risk,
+
+
+	 base *bptr= new derived1;
+     derived1 *dptr= bptr; //--compiler error
+     dptr->show();
+
+      //Devloper assurance that this conversion is fine and i want convert   by static_cast
+	  base *bptr= new derived1;
+	  derived1 *dptr= static_cast<derived1 * >(bptr);
+	  dptr->show();
+	  OutPut: 10
+ //*3.So devloper can do  conversion that is casting on his choice and risk
+	  //So in this case compiler fails but we are able to type cast by using static_cast which
+	  //return same pointer Adrees that is conversion sucessfull
+      //***Important---
+		base *bptr= new derived1;
+		derived2 *dptr= static_cast<derived2 * >(bptr); //not failed given valid Address
+		dptr->show();
+
+		OutPut: 10  //But wrong out put ,its happened as static cast Allowd it,even though type is not matched
+					//and object of derived2 is not presnt,it take derived1 values only
+		-expecting 5
+		-Not 5 because object is pointing to derived 1,this no-one will want,
+		-so static_cast giving ,choice but with risk on devloper to own it
+
+ //*4.In the use case 3: //wrong out put receieved ,its happened as static cast Allowd it
+		//and return valid type casted pointer.if we use dynamic_casting bad-coneversion error
+		//could have receieved.this is extra check is provided by dynamic_cast
+		//but we can do  dynamic_cast  if  virtual function present in base class,
+
+		base *bptr= new derived1;
+		derived2 *dptr= dynamic_cast<derived2* >(bptr); //compiler error , no polymorpic classs
+		dptr2->show();
+
+ //*6.put virtual key word in base class function[**Pre condition changed here:Basc classs contain virtual key word ]
+		base *bptr= new derived1;
+		derived2 *dptr= dynamic_cast<derived2 * >(bptr); // no  errror
+		if(dptr==NULL)
+		{
+			dptr->show();   //but run time error here
+		}
+		//So dynamic casting  save us wrong value by checking conversion is succesfull or not
+		//by returning null
+#endif
