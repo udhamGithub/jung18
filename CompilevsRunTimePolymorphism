@@ -2,14 +2,16 @@
 	-Give real example of below used in project
   -polymorphism:
       -Run time binding:
-              -code will be ecuting
-              -user will give option,function will set the variable
-              -Excutable file already generated
+              -LateBinding
+	      -Excutable file already generated
+              -user will give option or call the function to get current mode
+               then call set function to  set the variable or run the excutable
+              
       -compile time binding,
-              -this can not achived by run time functionality
-              -need macro
+	      -This is early binding unlike run time             
+              -Need macro as variable
               -Macro  defined in  some file ,and in op file file it set true or false
-              -Befor genrating(.exe) excutable file condition are checked
+              -Befor genrating(.exe) excutable file condition are checked and code generate
   ====================================================================================
 	1-Sim Selection[Run time bindin ]
 			-Sim1 or Sim2
