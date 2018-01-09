@@ -1,0 +1,34 @@
+#if 0
+	-Give real example of below used in project
+  -polymorphism:
+      -Run time binding:
+              -code will be ecuting
+              -user will give option,function will set the variable
+              -Excutable file already generated
+      -compile time binding,
+              -this can not achived by run time functionality
+              -need macro
+              -Macro  defined in  some file ,and in op file file it set true or false
+              -Befor genrating(.exe) excutable file condition are checked
+  ====================================================================================
+	1-Sim Selection[Run time bindin ]
+			-Sim1 or Sim2
+			-Only one line
+			-User Give Input
+
+			-Compile time both code will be compiled
+			-present in excutable ,based on user input ,given code will be excute
+			-Function will be called here to  change the status
+			-run time polymorphism
+	2.Specific code on specific target[compile time binding]
+	        -It use macro flag ,which define in  operation file(op) and checked by make file at compilation
+			-[this code]run on target1 not target2
+			-if target1
+			    code compile and run on system
+		    -else
+		    	code does not compile and not excute on system,
+
+			-Above things called compile time polymorphism
+			-Run time polymorphism will not help here,because hardware flag is set by user in op for which
+			 target  has to be happen at compile time ,befor excutable generation,
+#endif
