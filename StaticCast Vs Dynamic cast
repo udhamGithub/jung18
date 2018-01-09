@@ -1,11 +1,15 @@
 #if 0
+
 -----------------------------------------------------------------------------------------------------------
-//casting tell us conversion is safe or not
+//casting tell us conversion is safe or not,or type is matching or not
 //Well explained where only staic cast help not dynamic cast.But user need to care for static_casting
 //It covers when dynamic cast save from wrong out put by giving run time error, which static cast does  not
-  //which leave to user.
-//If base class pointer  want to acess derived class object function,It wont
+  //which leave on  user to take care.
+//If base class pointer  want to acess derived class object function,why it not able to acess,it acess only own
+//if base class pointer Assigned to derived class pointer ,why error
 ==========================================================================================================
+ //First Go through  note below written Index sequence
+===========================================================================================================
 #endif
 #include<iostream>
 using namespace std;
@@ -45,7 +49,7 @@ public:
 //-------------------------------------------------------------------
 int main()
 {
-  //First Go through  note below written sequence
+       //First Go through  note below written Index sequence
   
 	base *bptr= new derived1;
 	//derived2 *dptr= static_cast<derived2 * >(bptr);
