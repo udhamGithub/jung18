@@ -1,0 +1,30 @@
+Date:11Jan2017:TCS
+-Syed-Brain
+-Nveen,Arpita Bose,Sandeep[correct]
+-Somya-Took my Detail his contact number after detail
+-Interviewr:? 
+-C++ Multithreading
+
+1.C++ Multithreading
+    -
+    -
+1.C++ Concept
+    Code snippet 
+    class A
+    {
+      int * x;          
+    }
+    Main()
+    {
+       A obj(10);
+       A obg2(obj1);
+       A obj3=obj2;
+              
+       Obj2=Obj1;
+       
+       
+    }
+2.Debugging 
+3.Linux
+    =List of command
+    =Gdb command
