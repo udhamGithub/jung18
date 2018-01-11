@@ -24,7 +24,8 @@ Date:11Jan2017:TCS
        A obj2(obj1);                //copy constructor--why with constant?
        A obj3=obj2;                 //copy constructor
        Obj2=Obj1;                   //default Assingment operator//Shallow  Assignment//Deep Assignment
-       cout<< obj1 << obj2 << obj3; //Conversion Operator//Treating object like built in data type?Print 
+       cout<< obj1 << obj2 << obj3; //Conversion  functio Operator//Treating object like built in data type?Print 
+                                    //Can be done by loading << extraction operator
     }
     a.Write a code for all use cases  and handle all use case
     b.How you will Handle use case obj2 = obj2;
