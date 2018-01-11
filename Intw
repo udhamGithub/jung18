@@ -8,7 +8,10 @@ Date:11Jan2017:TCS
 1.C++ Multithreading
     -
     -
-1.C++ Concept
+2.C++ Concept
+//Ques?1.=========================================================
+    1. Diffrence b/w abstartion and  encaptulation?
+//Ques?2=========================================================
     Code snippet 
     class A
     {
@@ -16,16 +19,64 @@ Date:11Jan2017:TCS
     }
     Main()
     {
-       A obj(10);
-       A obg2(obj1);
-       A obj3=obj2;
-              
-       Obj2=Obj1;
-       
-       
+       A obj;                       //defalut constructor --I added
+       A obj(10);                   //One argument constructor
+       A obj2(obj1);                //copy constructor--why with constant?
+       A obj3=obj2;                 //copy constructor
+       Obj2=Obj1;                   //default Assingment operator//Shallow  Assignment//Deep Assignment
+       cout<< obj1 << obj2 << obj3; //Conversion Operator//Treating object like built in data type?Print 
     }
-2.Debugging 
-3.Linux
-    =List of command
-    =Gdb command
-4-
+    a.Write a code for all use cases  and handle all use case
+    b.How you will Handle use case obj2 = obj2;
+    c.Internally Asked Deep copy and Shallow copy    
+        
+ //Ques?:=========================================================
+    -Have you work with STL template
+        -Container ,Iterator ,Alogorithm
+    -What technique used in Map and list for storing data?
+        -AlL will be stored in sorted order,what if
+        -BST?
+        -What is balance tree
+    -
+ 
+ 
+//Ques?2:=========================================================
+    -How you achieve dynamic polymorphism?
+    -How you 
+    -How many ways Achive static polymorphism
+            -function overloding
+            -operator overloading
+            -template method
+    -Difference b/w class template and template class
+//Question: 3 Have you work with Sql
+    -Yes but not more on SQL-
+        -We have used Sqlite Lib
+        -There XDB framework , which we interct with Sqlite
+        -XDB Frame work gives all interaction leval API to Sqlie
+        -XDB Running on own  task--it excute the Sqlite Provided api for DB Interaction
+    -Table create ,Join, ?---
+    -
+3.Debugging     
+4.Linux
+    =List of command?
+    =what does export ,we can give  ? path also
+    =Gdb command?
+        -how you conncet gdb while running program?
+    
+    =staic library and dyanmic libray? how to differrntiate
+=========================================================================================
+
+AI On Me:
+    //Conversion Operator? Treating object like built in data type
+    //Static Library v/s dynamic library linking
+    //export ,we can give our own path directly?
+    //Sqlite Basic
+
+
+
+
+
+
+
+
+    
