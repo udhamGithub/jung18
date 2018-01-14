@@ -1,6 +1,5 @@
-1 Written test:
-    
-2 Face to face
+1 Written test:    
+2 Face to face,
 3 HR Discussion
 4.Skype Call
   -
@@ -8,6 +7,23 @@
   -What is diffrence b/w refrence and pointer  and refrence
   -Virtual function
 ===========
+1 Written test: 
+     1-Diffrence b/w deep copy and shallow copy
+     2-Diffrence b/w Procees and thread
+     3-Different IPC Mechanism:
+                    1-List of Ipc Mechanism
+                    2-Which is best?
+     4.What is smart pointer,List of smart pointer?
+     5.What is dimond problem ? How to resolveit
+     6.How many type of casting in c++,List it?
+
+                         
+2:1.Write A stack program in c++;
+  2.Reverse a Single link list: 
+  3.Write your own strstr() program:
+
+
+
 Next:
     -Give you view on below,List all  Parrelel thread running 
           -What is the project Source:?
