@@ -2,7 +2,7 @@
 The Four Stages of Compiling a C Program
 by Calle Erlandsson · August 7, 2015 
 Tagged c
-
-
-
+==================================================================================
 https://www.calleerlandsson.com/the-four-stages-of-compiling-a-c-program/
+Compiling a C program is a multi-stage process. At an overview level, the process can be split into
+Four separate stages: Preprocessing, compilation, assembly, and linking. 
