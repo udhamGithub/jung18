@@ -1,0 +1,14 @@
+
+1-What is virtual function?
+2-1virtual function what does?
+2-2Class have both virtual and Non Virtual 
+3-How many virtual pointer will be created?
+3-How many table in derived class?
+
+4-Binding-or-Linking
+      -It Can be compile time
+      -it Can be run time
+4-Linking happens at compile time or run time?
+5-Size of class without key word
+6-struct can have virtual function?size of struct in c++
+7-Size of struct in c++?
