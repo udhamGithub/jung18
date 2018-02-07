@@ -8,10 +8,15 @@ Conclusion:
        -shallow copy and  deep copy both are  used to copy new object          
 4.Distructure can be virtual?
 5.Dimond problem?
-         
 
-
-
+6.  A->B[virtual]->C->D->E
+7.  Class A
+    {
+         int a;
+         int b;
+         static int c;
+    };
+   what is size of A obj;
 
 
 5. Can you revese a string  and remove all duplicate character --my bad,I hate my my mind? why?
