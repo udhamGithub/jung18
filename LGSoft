@@ -9,6 +9,9 @@ Conclusion:
 4.Distructure can be virtual?
 5.Dimond problem?
 
+5.Order of constructor called , how base class constructor will be called?
+5. what is the order of distructor?
+
 6.  A->B[virtual]->C->D->E
 7.  Class A
     {
@@ -17,8 +20,12 @@ Conclusion:
          static int c;
     };
    what is size of A obj;
-
-
+   
+ 7. int A[10]={0,1,2,3,4,45,4,4,4};
+    a
+    &a[0]
+    &a
+    
 5. Can you revese a string  and remove all duplicate character --my bad,I hate my my mind? why?
 6  Can you find substring from given string?
 7  can you ceate 2 dimensional aray in c++ or c dynamically, parking issue.
