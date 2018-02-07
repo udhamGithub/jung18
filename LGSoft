@@ -6,7 +6,10 @@ Conclusion:
 2.How Much you rate urself in c++ and C/  C-6/C++7
 3.What is difference b/w deep copy and shallow copy
        -shallow copy and  deep copy both are  used to copy new object          
-4.what is 
+4.Distructure can be virtual?
+5.Dimond problem?
+         
+
 
 
 
@@ -21,9 +24,12 @@ Conclusion:
 
 
 Design pattern:
-          -sigalton instance
-                 -
-          -protpe method
+          -sigalton instance   when required?            
+          -Prototype method
                  -Object creation
                  -object copying
-          -diffrence b/w factory method
+          -diffrence b/w factory method and abstact factory
+          -Give code snippet for factory method
+Have You work in linux?
+         -what is exit syntax?
+         -Socket what is that?
