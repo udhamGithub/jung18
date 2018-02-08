@@ -1,0 +1,33 @@
+Tcon:
+
+Date-07/02/2012 RSystem  
+#How much rate in C++ ,8
+#when use copy constructor
+#static data;
+#when constant variable get initialised?
+#who crete virtual table and where it store , data segment or heap segment
+
+#what is dynamic_cast when you use?
+#
+
+
+#what is diffrence b/w factory and abstract factory?
+#How Achive Singalton Instance?\
+
+
+
+
+//------------------------
+//how debug memory debug issue
+    -Ataching process run time
+    -Allocated in new but distructure not called delet , any tool to use that
+          -in linux? valgrind
+          -IN WINDOWS?
+
+-What is RTypeTypecheckin
+    how many type ru time ttpe checking?
+-what is overeloading
+-what is 
+
+      
+
