@@ -1,3 +1,9 @@
+#When dynamic_cast should use? give specific example?
+	BaseClass*bptre;
+	Deived1 *dptr1;
+	Derived2 *dptr2;
+
+
 #if 0
 
 -----------------------------------------------------------------------------------------------------------
@@ -120,6 +126,8 @@ int main()
 		{
 			dptr->show();   //but run time error here
 		}
+		//dynamic_casting does extra things,it check RTTI(RuntypeTypeIdendifiction) othre function eg 
+		// std::cout << typeid(person).name() << std::endl; //person is a class,pointer,variable,refrence variable
 		//So dynamic casting  save us wrong value by checking conversion is succesfull or not
 		//by returning null
 #endif
