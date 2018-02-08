@@ -1,0 +1,11 @@
+//------------------------
+//how debug memory debug issue
+    -Ataching process run time
+    -Allocated in new but distructure not called delet , any tool to use that
+          -in linux? valgrind
+          -IN WINDOWS?
+
+-What is RTypeTypecheckin
+    how many type ru time ttpe checking?
+-what is overeloading
+-what is 
