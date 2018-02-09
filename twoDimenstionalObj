@@ -1,4 +1,3 @@
-Dynamic twoDimensional object
 #define ROW 2
 #define COLUMN 3
 #include<iostream>
@@ -13,23 +12,16 @@ class master
 	int static count;
 public:
 	master()
-    {
-		count++;
+    {	count++;
 		cout<<" Master class constructor called::object count "<<count <<endl;
-
     }
 	void show()
-	{
-		cout<<"show : Master class"<<endl;
-	}
+	{cout<<"show : Master class"<<endl;	}
 
-	~ master(){
-		count =count-1;
+	~ master(){	count =count-1;
 		cout<<" dis  #######Master class Distructure called ::left obj "<<count<<endl;}
 };
-
 int master::count =0;
-
 int main()
 {
 	//for single array
@@ -39,16 +31,11 @@ int main()
 	master **ptr2 = new master *[ROW];
 	//for
 	for(int i=0;i<ROW;i++)
-	{
-		ptr2[i]= new master [COLUMN];
-	}
+	{ptr2[i]= new master [COLUMN];	}
 	//clear
 	for(int j=0;j<ROW;j++)
-	{
-		delete [] ptr2[j];
-	}
+	{delete [] ptr2[j];	}	
 	delete [] ptr2;
-
 	return 0;
 }
 #if 0
@@ -69,7 +56,6 @@ Master class constructor called::object count 1
  dis  #######Master class Distructure called ::left obj 1
  dis  #######Master class Distructure called ::left obj 0
 #endif
-
 #if 0
 The #define directive can be used to create a name for a numerical, character, or string constant,
 whereas a const object of any type can be declared.A const object is subject to the scoping rules
@@ -81,6 +67,4 @@ A macro can be used in a constant expression, such as an array bound, whereas a 
 (I think we surely need to use macro to define array_size.The compiler does not type-check a macro,
 including macro arguments.
 #endif
-
-
 
