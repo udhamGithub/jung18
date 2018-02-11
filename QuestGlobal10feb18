@@ -14,6 +14,24 @@ what designing pattern you had work?
       -Prototype
       -State machine[---][]input --used  diffrent  class object for each state?
       -Singleton
+ what is callback()
+        [a]=
+        -callback function,
+        -callback prototype()
+        -Assigning callback function()
+        -callingCallBack()
+        [b]-same function diffrent way()
+                -how you will calltion overloading.
+                -func
+        
+        
+  what is 
+        
+ operator overloading()(Unay Operator Overloading)
+        -some things boundary value
+        -how to overload pree Operator()
+        -How  overload post operator()
+      
 How you does the unit testing?
       -Unit test framework is written 
          
