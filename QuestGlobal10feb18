@@ -48,3 +48,10 @@ How you does the unit testing?
 Semaphor? 
 Mutex?
 thread_synchronisation?
+//======================================
+
+
+
+vector<vector<int> > matrix(RR);
+for ( int i = 0 ; i < RR ; i++ )
+   matrix[i].resize(CC);
