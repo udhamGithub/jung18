@@ -12,7 +12,7 @@ what designing pattern you had work?
       -Factory 
       -Abstarct factory
       -Prototype
-      -State machine
+      -State machine[---][]input --used  diffrent  class object for each state?
       -Singleton
 How you does the unit testing?
       -Unit test framework is written 
@@ -22,3 +22,5 @@ How you does the unit testing?
       -without changing main      
       -Last Function  
  
+ 
+ 8423062255--Deepak Number
