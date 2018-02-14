@@ -38,6 +38,9 @@
           -Deadlock dedection?
     10.Benifit over multithreaded process and single threaded process?         
     11.Had you heard about  RTOS-Integrity? 
-    12.How you will decide  the 
+    12.How you will decide  the priority of of thread
+                -T1--->Display milion of point draw on display
+                -T2---Does logic 
+                _T3-->take User input
             
      --
