@@ -1,0 +1,99 @@
+
+#include<pthread.h>
+#include<semaphore.h>
+#include<unistd.h>
+#include <sched.h>
+
+#include<iostream>
+using namespace std;
+#if 0
+=Even and odd thread Take input from  main thread by cin
+=
+#endif
+
+
+
+sem_t 	  semphorId;
+pthread_t pthreadId1;
+pthread_t pthreadId2;
+
+
+
+int ret;
+
+/* initialized with default attributes */
+
+
+
+int count=-1;
+void *thread1(void*) //Even thread
+{
+	while(1)
+	{	//sem_wait(&semphorId);
+		//if(count %2 == 0)
+		sem_wait(&semphorId);
+		{
+			if(count % 2 == 0 )
+			{
+				cout<<"Even:threa1[]"<<count<<endl;
+			}
+		}
+		sem_post(&semphorId);
+		sleep(1); 	//sem_post(&semphorId);
+	}
+	pthread_exit(NULL);
+}
+void *thread2(void*)  //odd thread
+{	while(1)
+	{	sem_wait(&semphorId);
+		if((count != -1) && (count %2 != 0))
+		{
+			cout<<" ODD:Thread2::"<<count<<endl;
+		}
+		sleep(1);
+		sem_post(&semphorId);
+	}
+	pthread_exit(NULL);
+}
+//pthread_attr_init(&attr);
+int main()
+{
+	int returnValue;
+	//---------------------------------
+	pthread_attr_t attr;
+
+	int newprio = 20;
+	sched_param param;
+	int rent;
+	rent = pthread_attr_init (&attr);
+	rent = pthread_attr_getschedparam (&attr, &param);
+
+	param.sched_priority = 20;
+	ret = pthread_attr_setschedparam (&attr, &param);
+
+	//================================
+	pthread_create(&pthreadId1,&attr,thread1,NULL);
+	//pthread_create(&pthreadId2,NULL,thread2,NULL);
+	sem_init(&semphorId,0,1);
+	//--Main thread will not get excute---if put the pthread_join, this is blocking
+
+	//pthread_join(pthreadId1,NULL);
+	//pthread_join(pthreadId2,NULL);
+
+
+	//---Main thread working put while loop else it will exit imediatley
+	while(1)
+	{
+		cout<<"enter Number"<<endl;
+		returnValue = sem_wait(&semphorId);
+		if(returnValue == 0)
+		{
+			cin >> count;
+			//cout<<"Obtain semapore succes"<<endl;
+		}
+		returnValue = sem_post(&semphorId);
+		sleep(1);
+	}
+	return 0;
+}
+
