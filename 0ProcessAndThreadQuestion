@@ -1,0 +1,43 @@
+0- Question on thread
+    1 -Write a thread which print 1-100
+          -User will give Input 1---100
+            a-Even thread should print even
+            b.odd thread shold print odd Number
+     
+    2-If one thread assert what will happen to other thread?
+
+    
+    3.Diffrence b/w process and thread?
+    3-What things will be shared b/w process and thread
+            -
+            -
+            -
+            -Good example vedio
+
+
+    3-How two process communicate to each other?
+    4-How One Process  communicate to other process thread?
+     
+    5 -what is the list of IPC Mechanism?
+            -Signal
+            -Messaging Q
+            -PIPE
+            -File 
+            -shared memeory           
+            
+    6.Give Example of mutex, how internally it works, and who does that -->OS
+            -Have you work conditional variable
+            -Mutex/semaphore can be used for both  Process and  thread synchronisation?
+
+            -
+    7.What happen if same function which have critical section    
+    8.what is deadlock?
+    9.How to come out with deadlock situation?
+          -Dedlock avoidance?
+          -dedlock prevention?
+          -Deadlock dedection?
+    10.Benifit over multithreaded process and single threaded process?         
+    11.Had you heard about  RTOS-Integrity? 
+    12.How you will decide  the 
+            
+     --
