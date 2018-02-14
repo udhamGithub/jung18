@@ -5,15 +5,25 @@
             b.odd thread shold print odd Number
      
     2-If one thread assert what will happen to other thread?
+            https://www.youtube.com/watch?v=oKJqqvnjl_s
 
     
     3.Diffrence b/w process and thread?
+               https://www.youtube.com/watch?v=nKdQgn_udtA
+               https://www.youtube.com/watch?v=Dhf-DYO1K78
+    3.Is thread run parrelly or sequentialy.
+                -user view--->Seems Parrle
+                -processor or syastem view--Sequential
+
     3-What things will be shared b/w process and thread
             -
             -
             -
             -Good example vedio
+                   0. Operating System Threads | Single, Multithreaded Process, benefits| Multithreading Models 
+                   1. Process Control Block(PCB) | User and System(Kernel) Modes of Execution 
                     https://www.youtube.com/watch?v=mApdHPCkeAY
+                   2.Process Switching | Scheduling Queue (Job, Ready, Device) | Long, Short, Medium Term Scheduler 
 
 
     3-How two process communicate to each other?
