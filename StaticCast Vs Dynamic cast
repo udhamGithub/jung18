@@ -1,3 +1,16 @@
+#Best Example Reinterpret_cast
+	int a=20;
+	int *ptr=&a;
+	float *ptrf = reinterpret_cast<float*>(ptr); // it is not fix same adrees of a will be achived.
+	int *dptr   =  reinterpret_cast<int*>(ptrf)  //Return original adress of a
+Eg.Think another example or enhance it
+	-Pass class this pointr to register server which take as class type adress store in integer
+         -conversion form class type adress to integer
+	 -
+	
+
+
+
 #When dynamic_cast should use? give specific example?
 	BaseClass*bptre;
 	Deived1 *dptr1;
