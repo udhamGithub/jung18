@@ -90,6 +90,7 @@ int main()
 //*1.base *bptr= new derived1;[**Pre condition -Basclasss does not contain any virtual key word,change in index 6 ]
    -Drived class object contain the base class data as it is derived *So in this case conversion
     does not failed
+   -Base class function is redefiend in dervid class ,but it does not conatin virtual key word
    -but base pointer will not able to acess the derived class function ,it will acess own function
     only .
 
