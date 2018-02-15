@@ -16,6 +16,13 @@ Eg.Think another example or enhance it
 	Deived1 *dptr1;
 	Derived2 *dptr2;
 
+	base *bptr= new derived1;   //Base class conatin virtual function
+	derived2 *dptr= dynamic_cast<derived2 * >(bptr); // no  errror
+	if(dptr==NULL)
+	{
+		dptr->show();   //but run time error here
+	}
+
 
 #if 0
 
